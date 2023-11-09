@@ -78,7 +78,7 @@ html, body {
 }
 
 main {
-    
+    background-image: url("../images/profile.JPG");
 
     margin: 15vh auto;
     padding: 30px;
