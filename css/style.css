@@ -1,0 +1,239 @@
+@font-face {
+    font-family: "Behind the Painter";
+    src: url("Behind-the-Painter.ttf");
+    src: url("Behind-the-Painter.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "The Revengers";
+    src: url("TheRevengers-Texture.otf");
+    src: url("TheRevengers-Texture.otf") format("opentype"),
+         url("TheRevengers-Texture.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Authentic Calisttera";
+    src: url("Authentic-Calisttera.ttf");
+    src: url("Authentic-Calisttera.ttf") format("truetype"),
+}
+
+@font-face {
+    font-family: "Pontiff Wide";
+    src: url("PontiffWide.otf");
+    src: url("PontiffWide.otf") format("opentype");
+}
+
+html, body {
+    background-image: url("../images/background.gif");
+    color: #202020;
+    font-family: "The Revengers", sans-serif;
+    font-size: 32px;
+    line-height: 1;
+    position: relative;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background: rgba(255, 255, 255, 0.95);
+
+    margin: 15vh auto;
+    padding: 30px;
+    width: 800px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header { font-family: "Behind the Painter", cursive; }
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 10px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1rem;
+    line-height: 1;
+    padding: 5px;
+    margin: 0;
+}
+
+img {
+    box-shadow: 0 1px 5px 1px #6b6a6a;
+    margin: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li:last-child { margin-right: 0; }
+nav ul li a { text-decoration: none; }
+
+#banner {
+    font-family: "Pontiff Wide";
+    display: none;
+    padding: 15px;
+    margin: 0;
+}
+
+#banner a {
+    position: absolute;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    touch-action: none;
+    -ms-touch-action: none;
+}
+
+.soundcloud{
+	text-decoration: none;
+	color: inherit;
+	cursor: text;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+.social {
+    margin-bottom: 1em;
+}
+
+#album-art {
+    width: 512px;
+    height: 512px;
+}
+
+.tracks {
+    display: flex;
+    flex-direction: column;
+    justify-content; flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 10px;
+}
+
+.track {
+    float: left;
+    margin: 5px;
+}
+
+.track-no {
+    font-family: "Authentic Calisttera", sans-serif;
+    margin-left: 10px;
+}
+
+.controls {
+    display: none;
+}
+
+.controls button {
+    background: none;
+    cursor: pointer;
+    transition: all 100ms ease;
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+.controls .play {
+    border-color: transparent transparent transparent #303030;
+    border-style: solid;
+    border-width: 16px 0 16px 24px;
+    box-sizing: border-box;
+    height: 24px;
+    width: 24px;
+}
+
+.controls .play:hover { border-color: transparent transparent transition #101010; }
+
+.controls .pause {
+    border-color: #303030;
+    border-style: double;
+    border-width: 0 0 0 24px;
+    height: 24px;
+    width: 24px;
+}
+
+.controls .pause:hover { border-color: #101010; }
+
+#contact {
+    background: #f9ed38;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    font-family: "Behind the Painter";
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem 1em;
+    transition: all 0.1s linear;
+}
+
+#contact:hover {
+    background: #f9e438;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.55);
+}
+
+::selection {
+    background-color: lightgray;
+}
+
+img::selection {
+    background: none;
+}
+
+@media screen and (max-width: 875px) {
+    main {
+        margin: 7.5vh auto;
+        padding: 15px;
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    html, body { background-image: none; }
+
+    main {
+        margin-top: 1vh;
+        padding: 7.5vh auto;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #album-art {
+        width: 384px;
+        height: 384px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .tracks {
+        margin-left: 50px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #album-art {
+        width: 256px;
+        height: 256px;
+        padding: 0;
+        margin: 0;
+    }
+}
