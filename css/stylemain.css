@@ -79,6 +79,9 @@ html, body {
 
 main {
     background: rgba(0, 0, 0, 0.6);
+	@media (max-width:600px){
+		background-image: url("../images/profile.jpg");
+	}
 
     margin: 15vh auto;
     padding: 30px;
