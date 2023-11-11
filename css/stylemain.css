@@ -82,6 +82,7 @@ main {
     background: rgba(0, 0, 0, 0.6);
 	@media (max-width:600px){
 		background-image: url("../images/profile.JPG");
+		background-attachment: fixed;
 	}
 
     margin: 15vh auto;
